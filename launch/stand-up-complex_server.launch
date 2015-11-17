@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find hrpsys_gazebo_tutorials)/launch/gazebo_hrp2jsknt_no_controllers.launch">
+		<arg name="WORLD" value="$(find iiiexhibition)/worlds/iiiexhibition_countryside.world"/>
+  </include>
+</launch>
