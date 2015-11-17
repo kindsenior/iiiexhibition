@@ -191,12 +191,12 @@
     <include>
       <uri>model://house_1</uri>
       <!-- <pose>12 9.5 0 0 0 0</pose> -->
-      <pose>2 3 0 0 0 0</pose>
+      <pose>1 1 0 0 0 0</pose>
     </include>
     <include>
       <uri>model://house_1</uri>
       <name>house_1_b</name>
-      <pose>-1 -2 0 0 0 1.5707</pose>
+      <pose>-1.5 -1 0 0 0 1.5707</pose>
     </include>
     <!-- <include> -->
     <!--   <uri>model://mailbox</uri> -->
@@ -212,53 +212,53 @@
     <!-- </include> -->
     <include>
       <uri>model://house_2</uri>
-      <pose>1 1 0 0 0 0</pose>
+      <pose>0 2 0 0 0 0</pose>
     </include>
-    <!-- <include> -->
-    <!--   <uri>model://house_2</uri> -->
-    <!--   <name>house_2_b</name> -->
-    <!--   <pose>77 8 0 0 0 0</pose> -->
-    <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://house_2</uri> -->
-    <!--   <name>house_2_c</name> -->
-    <!--   <pose>158 91 0 0 0 0</pose> -->
-    <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://house_3</uri> -->
-    <!--   <pose>54 7 0 0 0 0</pose> -->
-    <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://house_3</uri> -->
-    <!--   <name>house_3_b</name> -->
-    <!--   <pose>111 26 0 0 0 .78539</pose> -->
-    <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://house_3</uri> -->
-    <!--   <name>house_3_c</name> -->
-    <!--   <pose>170 106 0 0 0 0</pose> -->
-    <!-- </include> -->
+    <include>
+      <uri>model://house_2</uri>
+      <name>house_2_b</name>
+      <pose>-1.5 1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://house_2</uri>
+      <name>house_2_c</name>
+      <pose>1 -2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://house_3</uri>
+      <pose>3 -1 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://house_3</uri>
+      <name>house_3_b</name>
+      <pose>-1 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://house_3</uri>
+      <name>house_3_c</name>
+      <pose>1.5 -3 0 0 0 0</pose>
+    </include>
     <!-- <include> -->
     <!--   <uri>model://mailbox</uri> -->
     <!--   <name>mailbox_2</name> -->
     <!--   <static>true</static> -->
     <!--   <pose>59 4.45 0 0 0 0</pose> -->
     <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://fast_food</uri> -->
-    <!--   <static>true</static> -->
-    <!--   <pose>95 7.0 0 0 0 0</pose> -->
-    <!-- </include> -->
+    <include>
+      <uri>model://fast_food</uri>
+      <static>true</static>
+      <pose>1 -1 0 0 0 0</pose>
+    </include>
     <!-- <include> -->
     <!--   <uri>model://dumpster</uri> -->
     <!--   <static>true</static> -->
     <!--   <pose>143 51.5 0 0 0 0</pose> -->
     <!-- </include> -->
-    <!-- <include> -->
-    <!--   <uri>model://gas_station</uri> -->
-    <!--   <static>true</static> -->
-    <!--   <pose>135 84.8 0 0 0 0</pose> -->
-    <!-- </include> -->
+    <include>
+      <uri>model://gas_station</uri>
+      <static>true</static>
+      <pose>-2 -2 0 0 0 0</pose>
+    </include>
     <!-- <include> -->
     <!--   <uri>model://lamp_post</uri> -->
     <!--   <name>lamp_post_1</name> -->
@@ -355,14 +355,26 @@
     <!--   <static>true</static> -->
     <!--   <pose>141 35.5 0 0 0 -2.35</pose> -->
     <!-- </include> -->
-    <!-- <road name="main_street"> -->
-    <!--   <width>7.34</width> -->
-    <!--   <point>0 0 0.01</point> -->
-    <!--   <point>100 0 0.01</point> -->
-    <!--   <point>150 50 0.01</point> -->
-    <!--   <point>150 100 0.01</point> -->
-    <!--   <point>200 100 0.01</point> -->
-    <!-- </road> -->
+    <road name="main_street">
+      <width>1</width>
+      <point>-2 0 0.01</point>
+      <point>4 0 0.01</point>
+      <!-- <point>2 1 0.01</point> -->
+      <!-- <point>150 100 0.01</point> -->
+      <!-- <point>200 100 0.01</point> -->
+    </road>
+    <road name="side_street">
+      <width>1</width>
+      <point>0 -0.5 0.01</point>
+      <point>0 -4 0.01</point>
+    </road>
+    <road name="countryside_street">
+      <width>0.5</width>
+      <point>3.5 0 0.01</point>
+      <point>3.5 4 0.01</point>
+      <point>0 15 0.01</point>
+    </road>
+
     <model name="road_boxes">
       <static>true</static>
       <link name="link">
